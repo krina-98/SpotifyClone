@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="utility.css">
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 1.3rem;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(179, 179, 179, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="container flex">
+        <section class="left-section">
+            <ion-icon class="icon harmbar" name="close-outline"></ion-icon>
+            <div class="home-section">
+                <img class="svg-img" src="./img/logo.svg" alt="Spotify logo">
+                <ul class="list">
+                    <li class="flex">
+                        <img class="svg-img" src="./img/home.svg" alt="home">
+                        <a class="font-700" href="#">Home</a>
+                    </li>
+                    <li class="flex">
+                        <img class="svg-img" src="./img/search.svg" alt="search">
+                        <a class="font-700" href="#">Search</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="left-section-bottom">
+                <div class="library-section">
+                    <div class="library-left">
+                        <img class="svg-img" src="./img/library.svg" alt="library">
+                        <a href="#">Your library</a>
+                    </div>
+                    <div class="library-right">
+                      
+                    </div>
+                </div>
+
+                <div class="playlist-section">
+                    <div class="scroll-section">
+                        <div class="song-list">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sitemap-section">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety & Privacy Center</span>
+                        </a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="language">
+                            <img class="svg-img" src="./img/network.svg" alt="">
+                            English
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <section class="right-section">
+
+            <header class="header">
+                <div class="left-header">
+                    <ion-icon class="icon harmbar" name="reorder-three-outline"></ion-icon>
+                    <ion-icon class="icon" name="chevron-back-outline"></ion-icon>
+                    <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+                    
+                </div>
+                <div class="right-header">
+                    <a class="signup-btn" href="#">Sign up</a>
+                    <a class="login-btn" href="#">Log in</a>
+                </div>
+            </header>
+
+            <main>
+
+                <section class="song-playlist">
+                    <h2>Spotify Playlist</h2>
+                    <a href="#">show all</a>
+                    <div class="card-container">
+
+                    </div>
+                </section>
+
+            </main>
+
+            <div class="playbar">
+                <div class="playbar-btn">
+                    <div class="song-information">
+                        <p></p>
+                    </div>
+                    <div class="songcontrol">
+                        <img id="previous" class="svg-img" src="./img/presong.svg" alt="previous song">
+                        <img id="play" class="svg-img" src="./img/playsong.svg" alt="play song">
+                        <img id="next" class="svg-img" src="./img/nextsong.svg" alt="next song">
+                    </div>
+                    <div class="song-time">
+                        <div class="timepara">00:00 / 00:00</div>
+                        <div class="timevol">
+                            <img class="svg-img" src="./img/volume.svg" alt="Volume">
+                            <div class="range">
+                                <input type="range" name="range" id="volumerange">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </aside>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
